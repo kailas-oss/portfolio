@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kailas M | Python Backend Developer & AI Engineer</title>
+<meta name="description" content="Portfolio of Kailas M, Software Engineer with 1.4 years of experience in Python, Django and REST APIs, building RAG and LLM-powered applications.">
+<meta property="og:title" content="Kailas M | Python Backend Developer & AI Engineer">
+<meta property="og:description" content="Scalable backend systems and intelligent AI-powered applications.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#060914;--bg2:#0b1226;--card:rgba(255,255,255,.04);--bd:rgba(255,255,255,.09);--tx:#e8ecf7;--mut:#8f9ab8;--blue:#3b82f6;--pur:#8b5cf6;--cy:#22d3ee;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 400px at 15% 10%,rgba(59,130,246,.18),transparent),radial-gradient(500px 400px at 85% 30%,rgba(139,92,246,.16),transparent),radial-gradient(500px 400px at 50% 90%,rgba(34,211,238,.1),transparent);animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(-2%,3%) scale(1.06)}}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:92px 0}
+h2{font-size:clamp(1.7rem,3.5vw,2.4rem);margin:0 0 8px;letter-spacing:-.02em}
+.eyebrow{font:500 .8rem 'JetBrains Mono',monospace;color:var(--cy);text-transform:uppercase;letter-spacing:.14em}
+.lead{color:var(--mut);max-width:680px;margin:0 0 36px}
+.grad{background:linear-gradient(90deg,var(--blue),var(--pur),var(--cy));-webkit-background-clip:text;background-clip:text;color:transparent}
+.glass{background:var(--card);border:1px solid var(--bd);border-radius:18px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:transform .25s,border-color .25s}
+.glass:hover{transform:translateY(-4px);border-color:rgba(139,92,246,.5)}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:rgba(6,9,20,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-weight:800;letter-spacing:-.02em}
+.links{display:flex;gap:22px;font-size:.92rem;color:var(--mut)}
+.links a:hover,.links a.on{color:#fff}
+#menu{display:none;background:none;border:1px solid var(--bd);color:#fff;border-radius:10px;padding:6px 12px;font:inherit}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:12px;font-weight:600;border:1px solid var(--bd);background:var(--card);color:var(--tx);cursor:pointer;font-size:.95rem;transition:.2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--cy)}
+.btn.p{background:linear-gradient(90deg,var(--blue),var(--pur));border:0}
+.btn[aria-disabled=true]{opacity:.5;cursor:not-allowed;transform:none}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:110px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.08;letter-spacing:-.035em;margin:10px 0 14px}
+.sub{font-size:clamp(1.1rem,2.2vw,1.45rem);font-weight:600;margin:0 0 14px}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;align-items:center}
+.ico{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;border:1px solid var(--bd);background:var(--card);transition:.2s}
+.ico:hover{border-color:var(--cy);transform:translateY(-2px)}
+svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.term{padding:0;overflow:hidden;font:.84rem/1.7 'JetBrains Mono',monospace;box-shadow:0 30px 80px rgba(59,130,246,.15);animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.term .bar{display:flex;gap:7px;padding:12px 16px;border-bottom:1px solid var(--bd)}
+.term .bar i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.term .bar i:nth-child(2){background:#febc2e}.term .bar i:nth-child(3){background:#28c840}
+.term pre{margin:0;padding:18px 20px;overflow-x:auto;color:#cbd5f5}
+.k{color:var(--pur)}.s{color:var(--cy)}.f{color:#60a5fa}.c{color:#5b6788}
+.cur{display:inline-block;width:8px;height:15px;background:var(--cy);vertical-align:middle;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:28px}
+.about p{color:#c3cbe3;margin:0 0 14px}
+.stats{display:grid;gap:14px;align-content:start}
+.stat{padding:20px}.stat b{display:block;font-size:1.9rem}.stat span{color:var(--mut);font-size:.9rem}
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.sk{padding:24px}
+.sk h3,.pj h3{margin:0 0 14px;font-size:1.1rem;display:flex;align-items:center;gap:10px}
+.sk h3 span{color:var(--cy)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:.82rem;padding:5px 12px;border-radius:99px;border:1px solid var(--bd);background:rgba(255,255,255,.04);color:#cdd5ee}
+.tl{position:relative;padding-left:30px;border-left:2px solid var(--bd)}
+.tl::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--cy);box-shadow:0 0 0 5px rgba(34,211,238,.2)}
+.exp{padding:28px}
+.exp .meta{color:var(--mut);font-size:.92rem;margin-bottom:14px}
+.exp ul{margin:0;padding-left:18px;color:#c3cbe3}.exp li{margin:7px 0}
+.pj{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.pj .vis{height:130px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(59,130,246,.3),rgba(139,92,246,.3),rgba(34,211,238,.2));border-bottom:1px solid var(--bd)}
+.pj .vis svg{width:44px;height:44px;opacity:.9}
+.pj .body{padding:22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.pj p{margin:0;color:#b6bfd9;font-size:.94rem}
+.pj ul{margin:0;padding-left:18px;color:#9ba6c4;font-size:.88rem}
+.pj .foot{margin-top:auto;padding-top:6px}
+.road{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.node{padding:18px;cursor:pointer;text-align:left;font:inherit;color:inherit;border-radius:16px;background:var(--card);border:1px solid var(--bd);transition:.2s}
+.node:hover,.node[aria-pressed=true]{border-color:var(--cy);background:rgba(34,211,238,.08)}
+.node small{font:500 .72rem 'JetBrains Mono',monospace;color:var(--cy)}
+.node b{display:block;margin-top:4px}
+#detail{margin-top:20px;padding:22px;min-height:84px;color:#c3cbe3}
+.edu{padding:28px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:28px}
+.contact .info{display:grid;gap:12px;align-content:start}
+.info .glass{padding:16px 18px;display:flex;gap:12px;align-items:center}
+form{padding:26px;display:grid;gap:14px}
+label{font-size:.85rem;color:var(--mut);display:grid;gap:6px}
+input,textarea{background:rgba(255,255,255,.05);border:1px solid var(--bd);border-radius:10px;padding:11px 13px;color:var(--tx);font:inherit}
+input:focus,textarea:focus,.btn:focus-visible,.node:focus-visible,a:focus-visible{outline:2px solid var(--cy);outline-offset:2px}
+.note{font-size:.8rem;color:var(--mut);margin:0}
+footer{border-top:1px solid var(--bd);padding:30px 0;color:var(--mut);font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(max-width:900px){.hero .wrap,.about,.contact{grid-template-columns:1fr}.g3{grid-template-columns:1fr 1fr}.road{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){#menu{display:block}.links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--bg2);padding:16px 22px;border-bottom:1px solid var(--bd)}.links.open{display:flex}.g3,.road{grid-template-columns:1fr}section{padding:68px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav aria-label="Primary"><div class="wrap">
+<a href="#home" class="logo">kailas<span class="grad">.dev</span></a>
+<button id="menu" aria-expanded="false" aria-controls="links">Menu</button>
+<div class="links" id="links">
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#ai">AI Journey</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</div></div></nav>
+
+<header class="hero" id="home"><div class="wrap">
+<div>
+<span class="eyebrow">Software Engineer · Python Backend · AI</span>
+<h1>Hi, I’m <span class="grad">Kailas M.</span></h1>
+<p class="sub">Building Scalable Backend Systems &amp; Intelligent AI-Powered Applications.</p>
+<p style="color:#b6bfd9;max-width:560px">I’m a Software Engineer with 1.4 years of professional experience building backend applications, REST APIs, database-driven systems, and business workflows using Python and Django. Alongside backend development, I’m developing my expertise in AI engineering, LLM integrations, Retrieval-Augmented Generation (RAG), and intelligent workflow automation.</p>
+<div class="row">
+<a class="btn p" href="#projects">View My Projects</a>
+<a class="btn" data-resume href="#">Download Resume</a>
+<a class="btn" href="#contact">Contact Me</a>
+</div>
+<div class="row" style="margin-top:18px">
+<a class="ico" data-gh aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.3 6.4-1.5 6.4-7a5.4 5.4 0 0 0-1.5-3.8 5 5 0 0 0-.1-3.8s-1.2-.3-3.9 1.5a13.4 13.4 0 0 0-7 0C6.3 1.9 5.1 2.2 5.1 2.2a5 5 0 0 0-.1 3.8A5.4 5.4 0 0 0 3.5 9.8c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/></svg></a>
+<a class="ico" data-li aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg></a>
+</div></div>
+<div class="glass term" aria-hidden="true">
+<div class="bar"><i></i><i></i><i></i></div>
+<pre><span class="k">class</span> <span class="f">Engineer</span>:
+    name  = <span class="s">"Kailas M"</span>
+    stack = [<span class="s">"Python"</span>, <span class="s">"Django"</span>, <span class="s">"DRF"</span>]
+    ai    = [<span class="s">"RAG"</span>, <span class="s">"LangChain"</span>, <span class="s">"LangGraph"</span>]
+
+    <span class="k">def</span> <span class="f">build</span>(self):
+        <span class="c"># APIs, payments, workflows</span>
+        <span class="k">return</span> <span class="s">"scalable backends"</span>
+
+<span class="f">Engineer</span>().<span class="f">build</span>()<span class="cur"></span></pre></div>
+</div></header>
+
+<section id="about"><div class="wrap rv">
+<span class="eyebrow">01 · About</span><h2>About Me</h2>
+<div class="about">
+<div>
+<p>I’m a Software Engineer with 1.4 years of professional software development experience, focused on Python backend development with Django and Django REST Framework. I build REST APIs, integrate third-party APIs and payment gateways, and manage MySQL databases for business applications.</p>
+<p>My work includes automating business workflows, migrating and maintaining existing applications, and supporting deployments. Outside of day-to-day delivery, I have hands-on experience with LLM APIs and RAG applications.</p>
+<p>I’m interested in building scalable backend systems and practical AI-powered applications that solve real problems.</p>
+</div>
+<div class="stats">
+<div class="glass stat"><b class="grad">1.4 yrs</b><span>Professional experience</span></div>
+<div class="glass stat"><b class="grad">Django + DRF</b><span>Primary backend stack</span></div>
+<div class="glass stat"><b class="grad">RAG &amp; LLMs</b><span>Hands-on AI engineering</span></div>
+</div></div></div></section>
+
+<section id="skills"><div class="wrap rv">
+<span class="eyebrow">02 · Skills</span><h2>Technical Skills</h2>
+<p class="lead">Grouped by area. Edit the <code>DATA.skills</code> list in the script to update.</p>
+<div class="grid g3" id="skillGrid"></div></div></section>
+
+<section id="experience"><div class="wrap rv">
+<span class="eyebrow">03 · Experience</span><h2>Professional Experience</h2><p class="lead"></p>
+<div class="tl"><div class="glass exp">
+<h3 style="margin:0">Software Engineer / Python Backend Developer</h3>
+<div class="meta">Infiniti Software Solutions · July 2025 – Present · 1.4 Years</div>
+<ul>
+<li>Developed and maintained backend applications using Python, Django, and Django REST Framework.</li>
+<li>Designed and implemented REST APIs for business applications.</li>
+<li>Worked with MySQL databases and Django ORM.</li>
+<li>Integrated third-party payment gateways and supported payment processing workflows.</li>
+<li>Worked on wallet, payment, invoice, and reconciliation-related APIs.</li>
+<li>Automated CSV and Excel processing workflows using Python and Pandas.</li>
+<li>Implemented duplicate record prevention and data validation.</li>
+<li>Contributed to migrating existing PHP-based application functionality into Django.</li>
+<li>Supported application deployment and maintenance using Linux and Nginx.</li>
+<li>Performed debugging, production troubleshooting, and API testing.</li>
+</ul></div></div></div></section>
+
+<section id="projects"><div class="wrap rv">
+<span class="eyebrow">04 · Projects</span><h2>Featured Projects</h2><p class="lead"></p>
+<div class="grid g3" id="projGrid"></div></div></section>
+
+<section id="ai"><div class="wrap rv">
+<span class="eyebrow">05 · AI Engineering</span><h2>Exploring the World of <span class="grad">AI Engineering</span></h2>
+<p class="lead">My learning path and hands-on practice. Select a topic to read more.</p>
+<div class="road" id="road" role="group" aria-label="AI learning roadmap"></div>
+<div class="glass" id="detail" aria-live="polite">Select a topic above.</div></div></section>
+
+<section id="education"><div class="wrap rv">
+<span class="eyebrow">06 · Education</span><h2>Education</h2><p class="lead"></p>
+<div class="glass edu"><div><h3 style="margin:0">Bachelor of Engineering – Electronics and Communication Engineering</h3>
+<div style="color:var(--mut)">St. Xavier’s Catholic College of Engineering (SXCCE)</div></div>
+<div style="text-align:right"><b class="grad" style="font-size:1.5rem">CGPA 7.64</b><div style="color:var(--mut)">Graduated 2025</div></div></div></div></section>
+
+<section id="contact"><div class="wrap rv">
+<span class="eyebrow">07 · Contact</span><h2>Let’s Build Something <span class="grad">Great Together.</span></h2>
+<p class="lead">I’m always interested in connecting with developers, engineers, and teams working on backend systems, AI engineering, and innovative technology.</p>
+<div class="contact">
+<div class="info">
+<div class="glass"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 7l8 6 8-6"/></svg><span id="emailTxt">Email: add your address in CONFIG.email</span></div>
+<a class="glass" data-li target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>LinkedIn profile</a>
+<a class="glass" data-gh target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.3 6.4-1.5 6.4-7a5.4 5.4 0 0 0-1.5-3.8 5 5 0 0 0-.1-3.8s-1.2-.3-3.9 1.5a13.4 13.4 0 0 0-7 0C6.3 1.9 5.1 2.2 5.1 2.2a5 5 0 0 0-.1 3.8A5.4 5.4 0 0 0 3.5 9.8c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/></svg>GitHub profile</a>
+<div><a class="btn" data-resume href="#">Download Resume</a></div>
+</div>
+<form class="glass" id="form">
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Email<input name="email" type="email" required autocomplete="email"></label>
+<label>Subject<input name="subject" required></label>
+<label>Message<textarea name="message" rows="4" required></textarea></label>
+<button class="btn p" type="submit" id="send">Send Message</button>
+<p class="note" id="formNote"></p>
+</form></div></div></section>
+
+<footer><div class="wrap">
+<span>Designed &amp; Developed by Kailas M.</span>
+<span class="row" style="margin:0">
+<a class="ico" data-gh aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.3 6.4-1.5 6.4-7a5.4 5.4 0 0 0-1.5-3.8 5 5 0 0 0-.1-3.8s-1.2-.3-3.9 1.5a13.4 13.4 0 0 0-7 0C6.3 1.9 5.1 2.2 5.1 2.2a5 5 0 0 0-.1 3.8A5.4 5.4 0 0 0 3.5 9.8c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/></svg></a>
+<a class="ico" data-li aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg></a>
+<a class="ico" data-mail aria-label="Email"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 7l8 6 8-6"/></svg></a>
+</span></div></footer>
+
+<script>
+// ===== EDIT YOUR CONTENT HERE =====
+const CONFIG={
+  github:"https://github.com/kailas-oss",
+  linkedin:"https://www.linkedin.com/in/kailas23941250/",
+  email:"",   // add your email, e.g. "you@example.com"
+  resume:""   // add a resume URL/path (PDF) to enable download buttons
+};
+const DATA={
+ skills:[
+  ["Backend Development",["Python","Django","Django REST Framework","FastAPI","REST APIs","PHP Fundamentals"]],
+  ["AI & Generative AI",["LLM API Integration","LangChain","LangGraph","RAG","Prompt Engineering","AI Workflow Orchestration","Tool Calling","Embeddings","Vector Search","ChromaDB"]],
+  ["Database",["MySQL","SQL","Django ORM","Query Optimization","Database Design"]],
+  ["Tools & Infrastructure",["Git","GitHub","Postman","Docker","Linux","Nginx"]],
+  ["Python & Data Processing",["Pandas","CSV/Excel Automation","Data Processing","Exception Handling","Logging"]]
+ ],
+ projects:[
+  {t:"AI-Powered PDF Assistant using RAG",d:"Developed an AI-powered document question-answering application that allows users to upload PDF documents and ask questions based on their content.",
+   f:["PDF document loading and processing","Text chunking and embedding generation","Semantic similarity search","Vector database retrieval","Context-aware question answering","Source-aware responses"],
+   tech:["Python","LangChain","RAG","Sentence Transformers","ChromaDB","Groq LLM API"],gh:"https://github.com/kailas-oss/AI-Powered-PDF-Assistant-using-RAG"},
+  {t:"Backend API & Payment Integration",d:"Backend development experience through API development, payment gateway integrations, transaction workflows, and database-driven business logic.",
+   f:[],tech:["Python","Django","Django REST Framework","MySQL","REST APIs","Payment Gateway APIs"]},
+  {t:"AI Workflow Automation",d:"Hands-on learning and implementation of LLM-powered workflows, intelligent automation, and agent-based applications.",
+   f:[],tech:["Python","LangGraph","LangChain","LLM APIs","Prompt Engineering","Tool Calling"]}
+ ],
+ road:[
+  ["Large Language Models","Learning how LLMs work and integrating LLM APIs into Python applications."],
+  ["Tokenization & Embeddings","Understanding how text is tokenized and converted into embeddings, applied with Sentence Transformers."],
+  ["Vector Databases","Storing and retrieving embeddings using ChromaDB."],
+  ["Retrieval-Augmented Generation","Built a PDF question-answering assistant: chunking, embedding, retrieval and context-aware answers."],
+  ["Semantic Search","Using similarity search over embeddings to find relevant context rather than keyword matches."],
+  ["LangChain","Using LangChain to compose loaders, retrievers and LLM calls."],
+  ["LangGraph","Exploring graph-based, stateful workflows for agent-style applications."],
+  ["AI Agents","Learning agent-based application patterns built on tool calling and workflows."],
+  ["Prompt Engineering","Designing prompts for reliable, context-grounded responses."],
+  ["Tool Calling","Letting LLMs invoke functions and external tools within workflows."],
+  ["AI Workflow Automation","Applying LLM-powered automation to multi-step workflows."]
+ ]
+};
+// ===== END CONTENT =====
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+$$("[data-gh]").forEach(a=>a.href=CONFIG.github);
+$$("[data-li]").forEach(a=>a.href=CONFIG.linkedin);
+$$("[data-resume]").forEach(a=>{
+  if(CONFIG.resume){a.href=CONFIG.resume;a.setAttribute("download","")}
+  else{a.removeAttribute("href");a.setAttribute("aria-disabled","true");a.title="Resume file not added yet";a.addEventListener("click",e=>e.preventDefault())}
+});
+$$("[data-mail]").forEach(a=>{
+  if(CONFIG.email)a.href="mailto:"+CONFIG.email;
+  else{a.setAttribute("aria-disabled","true");a.title="Email not added yet";a.addEventListener("click",e=>e.preventDefault())}
+});
+if(CONFIG.email)$("#emailTxt").textContent=CONFIG.email;
+const icons=["M16 18l6-6-6-6M8 6l-6 6 6 6","M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM8 12h8M12 8v8","M3 5c0-1.7 4-3 9-3s9 1.3 9 3-4 3-9 3-9-1.3-9-3zM3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5","M4 17l6-6-6-6M12 19h8","M3 3v18h18M7 14l4-4 4 4 5-6"];
+$("#skillGrid").innerHTML=DATA.skills.map((s,i)=>`<div class="glass sk"><h3><span><svg viewBox="0 0 24 24"><path d="${icons[i%5]}"/></svg></span>${esc(s[0])}</h3><div class="chips">${s[1].map(x=>`<span class="chip">${esc(x)}</span>`).join("")}</div></div>`).join("");
+$("#projGrid").innerHTML=DATA.projects.map(p=>`<article class="glass pj"><div class="vis" role="img" aria-label="Project visual"><svg viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div><div class="body"><h3>${esc(p.t)}</h3><p>${esc(p.d)}</p>${p.f.length?`<ul>${p.f.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}<div class="chips">${p.tech.map(x=>`<span class="chip">${esc(x)}</span>`).join("")}</div><div class="foot">${p.gh?`<a class="btn" href="${p.gh}" target="_blank" rel="noopener">View on GitHub</a>`:`<span class="note">Repository link not added yet</span>`}</div></div></article>`).join("");
+$("#road").innerHTML=DATA.road.map((r,i)=>`<button class="node" aria-pressed="false" data-i="${i}"><small>${String(i+1).padStart(2,"0")}</small><b>${esc(r[0])}</b></button>`).join("");
+$("#road").addEventListener("click",e=>{const b=e.target.closest(".node");if(!b)return;$$(".node").forEach(n=>n.setAttribute("aria-pressed",n===b));const r=DATA.road[b.dataset.i];$("#detail").innerHTML=`<b class="grad">${esc(r[0])}</b><br>${esc(r[1])}`});
+$("#menu").addEventListener("click",()=>{const o=$("#links").classList.toggle("open");$("#menu").setAttribute("aria-expanded",o)});
+$$("#links a").forEach(a=>a.addEventListener("click",()=>$("#links").classList.remove("open")));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
+$$(".rv").forEach(el=>io.observe(el));
+const secs=$$("section[id]");
+addEventListener("scroll",()=>{let c="";secs.forEach(s=>{if(scrollY>=s.offsetTop-140)c=s.id});$$("#links a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+c))},{passive:true});
+$("#form").addEventListener("submit",e=>{
+  e.preventDefault();
+  if(!CONFIG.email){$("#formNote").textContent="Contact form isn’t connected yet: add an email in CONFIG to enable it.";return}
+  const f=new FormData(e.target);
+  location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent(f.get("subject"))}&body=${encodeURIComponent(f.get("message")+"\n\n— "+f.get("name")+" ("+f.get("email")+")")}`;
+});
+</script>
+</body>
+</html>
